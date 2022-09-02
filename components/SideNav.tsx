@@ -5,8 +5,18 @@ import Link from 'next/link';
 const items = [
   {
     title: 'Get started',
-    links: [{href: '/docs', children: 'Overview'}],
+    links: [{href: '/', children: 'Overview'}],
   },
+  {
+    title: 'API',
+    links: [{
+      href: '/application', children: 'Application'
+    },
+    {
+      href: '/event', children: 'Event'
+    }
+  ]
+  }
 ];
 
 export function SideNav() {
