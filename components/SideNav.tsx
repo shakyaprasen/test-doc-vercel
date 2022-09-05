@@ -9,7 +9,8 @@ const items = [
       { href: '/', children: 'Overview' }, 
       { href: '/response', children: 'Response' },
       { href: '/error', children: 'Error' },
-      { href: '/pagination', children: 'Pagination' }
+      { href: '/pagination', children: 'Pagination' },
+      { href: '/authentication', children: 'Authentication' }
     ],
   },
   {
