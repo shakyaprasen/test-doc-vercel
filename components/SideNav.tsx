@@ -5,7 +5,12 @@ import Link from 'next/link';
 const items = [
   {
     title: 'Get started',
-    links: [{href: '/', children: 'Overview'}],
+    links: [
+      { href: '/', children: 'Overview' }, 
+      { href: '/response', children: 'Response' },
+      { href: '/error', children: 'Error' },
+      { href: '/pagination', children: 'Pagination' }
+    ],
   },
   {
     title: 'API',
