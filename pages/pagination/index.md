@@ -17,7 +17,7 @@ The number of items to skip.
 
 ```js
 // GET /v1/events
-const req = await axios.get('api.scheduler.com/v1/events', {
+const req = await axios.get('{SCHEDULER_API}/v1/events', {
 	params: {
 		limit: 10,
 		offset: 0

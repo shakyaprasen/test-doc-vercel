@@ -103,7 +103,7 @@ List of strings for tagging the event. Useful for filterting the event through t
 
 ```js
 // POST v1/events
-const req = await axios.post('api.scheduler.com/v1/events', {
+const req = await axios.post('{SCHEDULER_API}/v1/events', {
   "eventOwner": "user@example.com",
   "endDate": "2023-09-02T05:11:59.708Z",
   "interval": "* * * 1 * *",
@@ -171,7 +171,7 @@ e.g.
 
 ```js
 // GET /v1/events
-const req = await axios.get('api.scheduler.com/v1/events', {
+const req = await axios.get('{SCHEDULER_API}/v1/events', {
 	params: {
 		query: {
 			"eventOwner": ["user@example.com"],
@@ -201,7 +201,7 @@ Gets the detail for a specific event based on it's eventId.
 
 ```js
 // GET /v1/event/:event-id
-const req = await axios.get('api.scheduler.com/v1/event/:event-id')
+const req = await axios.get('{SCHEDULER_API}/v1/event/:event-id')
 ```
 
 **Returns**  
@@ -236,7 +236,7 @@ List of strings for tagging the event. Useful for filterting the event through t
 
 ```js
 // POST v1/events
-const req = await axios.patch('api.scheduler.com/v1/events', {
+const req = await axios.patch('{SCHEDULER_API}/v1/events', {
   "endDate": "2023-09-02T05:11:59.708Z",
   "interval": "* * * 1 * *",
   "callbackUrl": "https://api.yourapi.com",
@@ -259,7 +259,7 @@ Deletes the evnt based on it's eventId. The callback will not be executed after 
 
 ```js
 // GET /v1/event/:event-id
-const req = await axios.delete('api.scheduler.com/v1/event/:event-id')
+const req = await axios.delete('{SCHEDULER_API}/v1/event/:event-id')
 ```
 
 **Returns**  
@@ -272,7 +272,7 @@ Pauses event based on it's eventId. The callback will not be paused after pausin
 
 ```js
 // GET /v1/event/:event-id
-const req = await axios.post('api.scheduler.com/v1/event/:event-id/pause')
+const req = await axios.post('{SCHEDULER_API}/v1/event/:event-id/pause')
 ```
 
 **Returns**  
@@ -285,7 +285,7 @@ Resumes an already paused event based on it's eventId. The callback will be resu
 
 ```js
 // GET /v1/event/:event-id
-const req = await axios.post('api.scheduler.com/v1/event/:event-id/resume')
+const req = await axios.post('{SCHEDULER_API}/v1/event/:event-id/resume')
 ```
 
 **Returns**  

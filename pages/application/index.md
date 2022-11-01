@@ -33,7 +33,7 @@ String identifying the registered application.
 
 ```js
 // POST v1/register
-const req = await axios.post('api.scheduler.com/v1/register', {
+const req = await axios.post('{SCHEDULER_API}/v1/register', {
 	appName: "RLP"
 })
 ```

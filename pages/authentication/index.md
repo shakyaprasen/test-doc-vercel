@@ -20,7 +20,7 @@ The API key needs to be added to the header `X-API-Key` for each request. If fai
 ```js
 axios.defaults.headers.common['X-API-Key'] = 'Your API Key';
 
-const req = await axios.get('api.scheduler.com/v1/event/:event-id')
+const req = await axios.get('{SCHEDULER_API}/v1/event/:event-id')
 ```
 
 
